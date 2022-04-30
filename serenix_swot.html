@@ -1,0 +1,121 @@
+<html>
+<head>
+<style type="text/css">
+	div.vertical, span.vertical {
+	    display:inline-block;
+		 transform: rotate(-90deg);
+		 -webkit-transform: rotate(-90deg); /* Safari/Chrome */
+		 -moz-transform: rotate(-90deg); /* Firefox */
+		 -o-transform: rotate(-90deg); /* Opera */
+		 -ms-transform: rotate(-90deg); /* IE 9 */
+		 filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  /* IE6,IE7 */
+		 -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
+		transform-origin: 50% 50%;
+	}
+</style>
+<script type="text/javascript" src="serenix_ns_utils.js"></script>
+<script type="text/javascript" src="serenix_html_utils.js"></script>
+<script type="text/javascript" src="serenix_accents.js"></script>
+<script type="text/javascript" src="serenix_css_base.js"></script>
+<script type="text/javascript" src="serenix_css_box_model.js"></script>
+<script type="text/javascript" src="serenix_base_survey.js"></script>
+<script type="text/javascript" src="serenix_css.js"></script>
+<script type="text/javascript" src="serenix_swot.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+	var swot = new SWOT({
+	    environmentTextOrientation: 'vertical',
+		analyses : {
+			s1: "performance produit et qualité",
+			S2: "services",
+			s3: "recherche et développement",
+			w1: "prix du prduit",
+			w2: "coût du produit",
+			w3: "effort de production",
+			w4: "logistique",
+			o1: "forte croissance du marché",
+			o2: "domaines de produits non développés",
+			t1: "nouvelles technologies  de substitution pour le domaine de produit A",
+			t2: "forte concurrence"
+		},
+		strategies: {
+			so: "Stratégie d'adoption",
+			st: "Stratégie de neutralisation",
+			wo: "Stratégie de conversion",
+			wt: "Stratégie de défense",
+			strategies : {
+				's1-o3': "La croissance du marché justifie d'autres dépenses en recherche et developpement pour faire de l'entreprise un chef de file dans le domaine de la technologie",
+				's3-o2': "Etendre la recherche et la technologie à d'autres produits",
+				'w1+w2+w3+o3': "La croissance du marché justifie des investissements dans des installations de produits plus efficaces",
+				'w2+w3+o2': "La coopération avec des partenaires produits pourrait permettre de développer de nouveaux produits sans augmenter davantage l'effort et les coûts de production",
+				'w4+o1': "Une alliance marketing pour répondre à une demande croissante",
+				's1+s2+t1': "Promouvoir la qualité des produits et des services afin d'empêcher les clients des produits A de passer à une technologie de substitution",
+				's1+t1': "Promouvoir la qualité des produits et des services pour éliminer la concurrence",
+				's3+t1': "Intégrer la technologie de substitution dans les domaines de produits A dans ses propres produits",
+				'w1+w2+w3+t1+t2': [
+					"Alliance stratégique avec le leader du marché dans le domain des produits A",
+					"Objet du champ de produits A"
+				]
+			}
+		},
+		cornerLabel : "Analyse SWOT",
+		internalLabel: "Analyse de l'entreprise",
+		externalLabel: "Analyse de l'environnement",
+		/*colors: { axis : { background: SWOT.BLUE, color: 'white' }, strategies : SWOT.COLORS}, //
+		style: { ref : { "font-weight": "bold"}, "s-ref" : { "font-weight": "bold" , color: SWOT.BLUE}},*/
+		colors: { axis : { background: SWOT.AFRIKPAY_BLUE, color: 'white' }, strategies : SWOT.COLORS}, //SWOT.AFRIKPAY_BLUE
+		style: { ref : { "font-weight": "bold"}, "s-ref" : { "font-weight": "bold" , color: SWOT.BLUE}},
+		cellPadding : 15,
+	});
+	
+	var swotDsi = {
+		strengths: [
+			"Anticipation des besoins",
+			"Expertises techniques",
+			"Innovation",
+			"Force de proposition",
+			"Multi projets",
+			"Maîtrise et réduction des couts",
+			"Communication E-mailing",
+			"Audit stratégique et technique",
+			"Emulation",
+			"Esprit d’équipe"
+		],
+
+		weaknesses : [
+			"Manque de process dev, achats, finance, licence",
+			"Manque de moyens et d’outils de collaboration",
+			"Productivité réduite en DEV",
+			"Pas de stratégie de sécurité globale",
+			"Manque de clarté sur les ROI"
+		],
+
+
+		opportunities: [
+			"Environnement Open source",
+			"Web 2.0 (web services)",
+			"Virtualisation serveurs et applications",
+			"Convergence VDI",
+			"KM",
+			"ETL",
+			"Rentabilité de la DSI",
+			"Innovation et Veille technologique"
+		],
+
+		threats: [
+			"Espionnage industriel : Vols d’information",
+			"Turn-over",
+			"Fuite du savoir et des compétences",
+			"Virus",
+			"Sous-traitances",
+			"Non respects des standards"
+		]
+
+	};
+
+</script>
+
+</body>
+</html>
